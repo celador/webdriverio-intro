@@ -1,0 +1,19 @@
+{
+	"version": "0.1.0",
+	"command": "gulp",
+	"isShellCommand": true,
+	"options": {
+		"cwd": "${workspaceRoot}"
+	},
+	"tasks": [
+        {
+            "taskName": "tdd-this",
+            "args": [
+                "--file", "${fileDirname}//${fileBasename}"
+            ]
+        },
+        {
+            "taskName": "webdriver"
+        }
+	]
+}

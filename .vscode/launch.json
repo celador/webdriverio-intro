@@ -1,13 +1,33 @@
 {
-	"version": "0.2.0",
-	"configurations": [
-		{
-			"name": "Launch",
-			"type": "node",
-			"program": "${workspaceRoot}/test/specs/main.spec.js",
-			"env": {
-				"NODE_ENV": "development"
-			}
-		}
-	]
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch",
+            "type": "node",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "stopOnEntry": false,
+            "args": ["./test/specs/dogGroomer.spec.js"],
+            "cwd": "${workspaceRoot}",
+            "runtimeExecutable": null,
+            "externalConsole": false,
+            "sourceMaps": false,
+            "outDir": null
+        },
+        {
+            "name": "Attach",
+            "type": "node",
+            "request": "attach",
+            "port": 5858,
+            "sourceMaps": false,
+            "outDir": null,
+            "localRoot": "${workspaceRoot}",
+            "remoteRoot": null
+        }
+    ]
 }
