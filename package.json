@@ -1,0 +1,19 @@
+{
+  "name": "webdriver-talk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "wdio.conf.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Nelson <john.nelson@codescience.com> (http://codescience.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "webdriverio": "^4.0.3"
+  }
+}
